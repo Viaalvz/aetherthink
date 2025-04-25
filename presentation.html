@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Présentation - AetherThink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <script src="Scripts/Script.js" defer></script>
+    <link rel="stylesheet" href="Styles/Styles.css">
+
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #f1f1f1;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #1a1a1a;
+            padding: 2rem 1rem;
+            border-bottom: 2px solid #8b0000;
+        }
+
+        header img {
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #8b0000;
+        }
+
+        header h1 {
+            font-family: 'Creepster', cursive;
+            font-size: 3rem;
+            margin: 0.5rem 0 0;
+            color: #ff4d4d;
+        }
+
+        nav a {
+            color: #ff4d4d;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 77, 77, 0.3);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #ff4d4d;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-family: 'Creepster', cursive;
+        }
+
+        article {
+            margin-bottom: 3rem;
+        }
+
+        .image-row, .image-row2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .image-row img, .image-row2 img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #8b0000;
+        }
+
+        .characters {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .character h3 {
+            color: #f85f5f;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        @media (min-width: 768px) {
+            .characters {
+                flex-direction: row;
+            }
+
+            .character {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="audio/musique.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'audio HTML5.
+    </audio>
+    <script src="Scripts/musique.js" defer></script>
+
+
+    <img src="images/LogoAetherthink.jpg" alt="Logo AetherThink">
+    <h1>AetherThink</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="presentation.html">Présentation</a>
+        <a href="collaborateurs.html">Collaborateurs</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="telecharger.html">Télécharger</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Les Modes de Jeu</h2>
+
+    <article>
+        <h3>Mode Campagne</h3>
+        <div class="image-row">
+            <img src="images/chateau1homme.png" alt="Urbex dans le château" width="400">
+            <img src="images/chateau2.png" alt="Château hanté" width="400">
+        </div>
+        <p>
+            Dans le mode campagne, le joueur incarne un homme piégé dans un château lors d'une exploration urbaine. Il devra affronter des épreuves, collecter des objets et résoudre des énigmes pour espérer s’échapper vivant.
+        </p>
+    </article>
+
+    <article>
+        <h3>Mode Multijoueur</h3>
+        <p>
+            En mode co-op, plusieurs survivants devront trouver un moyen de s'échapper avant que le temps ne s'écoule… et avant que le tueur ne les trouve. Chaque rôle dispose de compétences uniques pour pimenter la partie.
+        </p>
+
+        <div class="characters">
+            <div class="character">
+                <h3>Les Survivants</h3>
+                <div class="image-row2">
+                    <img src="images/SurvivantShérif.png" alt="Survivant Shérif">
+                    <img src="images/SurvivantRadar.png" alt="Survivant Radar">
+                </div>
+                <p>
+                    Chaque survivant dispose d’une capacité spéciale : ralentir le tueur avec un pistolet, bloquer des portes avec des clés, ou utiliser un radar détectant l’ennemi toutes les 6-7 secondes.
+                </p>
+            </div>
+
+            <div class="character">
+                <h3>Les Tueurs</h3>
+                <div class="image-row2">
+                    <img src="images/TueurPiège.png" alt="Tueur Piégeur">
+                    <img src="images/TueurTraqueur.png" alt="Tueur Traqueur">
+                </div>
+                <p>
+                    Les tueurs doivent éliminer tous les survivants. Pour cela, ils peuvent poser des pièges, traquer les empreintes laissées par les survivants, ou piéger des portes avec des mécanismes meurtriers.
+                </p>
+            </div>
+        </div>
+    </article>
+</section>
+
+</body>
+</html>
+

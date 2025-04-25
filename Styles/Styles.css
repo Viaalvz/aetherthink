@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fond noir */
+    color: #ffffff; /* Texte blanc */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #a31aff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    display: flex; /* Active le mode Flexbox */
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    overflow-y: auto; /* Permet le défilement vertical */
+    text-align: center; /* Centre le texte */
+}
+
+ul {
+    list-style: none; /* Supprime les puces des listes */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 40px; /* Ajoute un espace entre chaque collaborateur */
+}
+
+img {
+    border-radius: 50%; /* Rend les images circulaires */
+    margin-top: 10px; /* Ajoute un espace entre l'image et le texte */
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3); /* Ajoute une ombre douce */
+}
+header img {
+    margin-top: 800px; /* Ajoute de l'espace au-dessus de l'image */
+    display: block; /* S'assure que l'image ne se mélange pas avec le texte */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
+}
+section {
+    text-align: center; /* Centre le titre et le contenu */
+}
+.collaborateur p {
+    transition: color 0.3s ease; /* Changement de couleur fluide */
+}
+
+.collaborateur p:hover {
+    color: #a31aff; /* Couleur violette au survol */
+}
+.collaborateur img {
+    transition: transform 0.3s ease-in-out; /* Animation fluide */
+}
+
+.collaborateur img:hover {
+    transform: scale(1.1); /* Agrandit l'image au survol */
+}
+.collaborateur {
+    opacity: 0; /* Cache l'élément initialement */
+    animation: fadeIn 1s forwards; /* Applique l'animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Début de l'animation */
+        transform: translateY(20px); /* Glisse vers le haut */
+    }
+    to {
+        opacity: 1; /* Fin de l'animation */
+        transform: translateY(0); /* Position normale */
+    }
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Décalage vers le bas */
+    transition: opacity 1s ease, transform 1s ease; /* Animation fluide */
+}
+section h2 {
+    font-size: 2em;
+    color: #a31aff;
+    margin-bottom: 20px;
+}
+
+article {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #1f1f1f; /* Fond sombre pour les articles */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7); /* Ombre subtile */
+}
+
+article h3 {
+    font-size: 1.5em;
+    color: #ffffff; /* Couleur blanche pour les titres des modes */
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 1.2em;
+    line-height: 1.6em; /* Espacement confortable */
+    color: #cccccc; /* Couleur plus claire pour le texte des descriptions */
+}
+.image-row img {
+    transition: transform 0.3s ease; /* Animation fluide */
+}
+
+.image-row img:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image */
+}
+.image-row2 img {
+    transition: transform 0.3s ease; /* Animation fluide */
+}
+
+.image-row2 img:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image */
+}
+article {
+    border: 2px solid transparent; /* Pas de bordure visible au départ */
+    transition: border-color 0.4s ease; /* Transition fluide pour la bordure */
+}
+
+article:hover {
+    border-color: #a31aff; /* Bordure violette au survol */
+}
+article {
+    background-color: #1f1f1f; /* Couleur initiale */
+    transition: background-color 0.3s ease;
+}
+
+article:hover {
+    background-color: #292929; /* Change légèrement la couleur au survol */
+}
+.hidden {
+    opacity: 0; /* Cache l'élément initialement */
+    transform: translateY(20px); /* Décalage vers le bas */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Animation fluide */
+}
+
+.visible {
+    opacity: 1; /* Rendu visible */
+    transform: translateY(0); /* Position normale */
+}
+header img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px; /* Espacement entre le logo et le texte */
+    border-radius: 50%; /* Rend le logo circulaire */
+}
+header {
+    opacity: 0; /* Cache initialement l'en-tête */
+    transform: translateY(-20px); /* Déplacement vers le haut */
+    animation: fadeIn 1s ease forwards; /* Animation fluide */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Position normale */
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(0, 0, 0, 0.95)),
+    url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f0f0f0;
+}
+
+header, footer {
+    background-color: rgba(20, 20, 20, 0.85);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+nav a {
+    color: #ff4c4c;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+section {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 30px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #ff4c4c;
+}
+
+a {
+    color: #ff7070;
+}
+
+button {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+
+
+
+

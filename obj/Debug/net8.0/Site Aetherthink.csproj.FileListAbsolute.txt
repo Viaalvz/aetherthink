@@ -1,0 +1,14 @@
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\bin\Debug\net8.0\Site Aetherthink.exe
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\bin\Debug\net8.0\Site Aetherthink.deps.json
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\bin\Debug\net8.0\Site Aetherthink.runtimeconfig.json
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\bin\Debug\net8.0\Site Aetherthink.dll
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\bin\Debug\net8.0\Site Aetherthink.pdb
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\obj\Debug\net8.0\Site Aetherthink.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\obj\Debug\net8.0\Site Aetherthink.AssemblyInfoInputs.cache
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\obj\Debug\net8.0\Site Aetherthink.AssemblyInfo.cs
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\obj\Debug\net8.0\Site Aetherthink.csproj.CoreCompileInputs.cache
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\obj\Debug\net8.0\Site Aetherthink.dll
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\obj\Debug\net8.0\refint\Site Aetherthink.dll
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\obj\Debug\net8.0\Site Aetherthink.pdb
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\obj\Debug\net8.0\Site Aetherthink.genruntimeconfig.cache
+C:\Users\victo\Site_Aetherthink\Site Aetherthink\obj\Debug\net8.0\ref\Site Aetherthink.dll

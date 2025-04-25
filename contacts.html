@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts - AetherThink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #f1f1f1;
+            font-family: 'Roboto', sans-serif;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.85);
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 2px solid #8b0000;
+        }
+
+        header img {
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #8b0000;
+        }
+
+        header h1 {
+            font-family: 'Creepster', cursive;
+            color: #ff4d4d;
+            font-size: 3rem;
+            margin: 0.5rem 0;
+        }
+
+        header p {
+            font-style: italic;
+            color: #ccc;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #ff4d4d;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(139, 0, 0, 0.7);
+        }
+
+        h2, h3 {
+            color: #ff4d4d;
+            font-family: 'Creepster', cursive;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #ff9999;
+            text-decoration: underline;
+        }
+
+        form {
+            margin-top: 2rem;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #1a1a1a;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 8px;
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #ff4d4d;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            padding: 0.75rem 2rem;
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #a30000;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.85);
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #aaa;
+            border-top: 1px solid #8b0000;
+            margin-top: 3rem;
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="audio/musique.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'audio HTML5.
+    </audio>
+    <script src="Scripts/musique.js" defer></script>
+
+    <img src="images/LogoAetherthink.jpg" alt="Logo AetherThink">
+    <h1>AetherThink</h1>
+    <p>L'Horreur par AetherThink</p>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="presentation.html">Présentation</a>
+        <a href="collaborateurs.html">Collaborateurs</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="telecharger.html">Télécharger</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Contactez-nous</h2>
+        <p>Pour toute question ou assistance, veuillez utiliser les informations suivantes :</p>
+        <ul>
+            <li><strong>Email :</strong> <a href="mailto:pa.chesseron@gmail.com">pa.chesseron@gmail.com</a></li>
+            <li><strong>Téléphone :</strong> +33 7 82 17 85 99</li>
+            <li><strong>Adresse :</strong> 63 rue Guy Môquet, Villejuif</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Formulaire de Contact</h3>
+        <form action="send_form.php" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 AetherThink. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
+

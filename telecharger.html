@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Télécharger - AetherThink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <script src="Scripts/Script.js" defer></script>
+    <link rel="stylesheet" href="Styles/Styles.css">
+
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #f1f1f1;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.85);
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 2px solid #8b0000;
+        }
+
+        header img {
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #8b0000;
+        }
+
+        header h1 {
+            font-family: 'Creepster', cursive;
+            color: #ff4d4d;
+            font-size: 3rem;
+            margin: 0.5rem 0;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #ff4d4d;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: rgba(30, 30, 30, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(139, 0, 0, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff4d4d;
+            font-family: 'Creepster', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        li a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #8b0000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 0 10px rgba(255, 77, 77, 0.4);
+        }
+
+        li a:hover {
+            background-color: #ff4d4d;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 77, 77, 0.8);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="audio/musique.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'audio HTML5.
+    </audio>
+    <script src="Scripts/musique.js" defer></script>
+
+
+    <img src="images/LogoAetherthink.jpg" alt="Logo AetherThink">
+    <h1>AetherThink</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="presentation.html">Présentation</a>
+        <a href="collaborateurs.html">Collaborateurs</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="telecharger.html">Télécharger</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Téléchargez AetherThink</h2>
+    <p>Plongez dans un univers horrifique unique. Sélectionnez votre plateforme ci-dessous :</p>
+    <ul>
+        <li><a href="telechargements/aetherthink_windows.exe" download>Windows</a></li>
+        <li><a href="telechargements/aetherthink_mac.dmg" download>MacOS</a></li>
+        <li><a href="telechargements/aetherthink_linux.tar.gz" download>Linux</a></li>
+    </ul>
+</section>
+</body>
+</html>
